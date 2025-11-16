@@ -1,0 +1,58 @@
+#include "DigiKeyboard.h"
+#define KEY_TAB 0x2B
+ void setup(){
+
+ }
+
+ void loop(){
+
+    DigiKeyboard.delay(5000);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.println("chrome");
+    DigiKeyboard.delay(1000);
+  //digitar a url
+  DigiKeyboard.println("https://nead.ifb.edu.br/");
+    DigiKeyboard.delay(3000);
+  //navegar no nead
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  //digitar enter
+   DigiKeyboard.sendKeyStroke(KEY_ENTER);
+     DigiKeyboard.delay(2000);
+  //area de login
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(500);
+  //digitar cpf
+  DigiKeyboard.print("08608344173");
+    DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(1000);
+  DigiKeyboard.println("Pink531@");
+    DigiKeyboard.delay(10000);
+
+ }
